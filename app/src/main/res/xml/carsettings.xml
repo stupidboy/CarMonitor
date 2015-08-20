@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/pref_open_rec_dir"
+        android:key="openRecDir"
+        ></Preference>
+    <Preference
+        android:title="清除所有录像（包含收藏）"
+        android:key="clearAll"></Preference>
+
+
+
+
+</PreferenceScreen>

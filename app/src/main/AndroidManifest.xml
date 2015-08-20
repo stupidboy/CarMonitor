@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.sprd.com.carmonitor"
+    >
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="ANDROID.PERMISSION.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.SHUTDOWN"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="sprd.car.start"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="ANDROID.INTENT.CATEGORY.HOME"></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".PhoneStatusReceiver">
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_CONNECTED"></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"></action>
+                <action android:name="android.intent.action.BATTERY_CHANGED"></action>
+                <action android:name="ANDROID.INTENT.ACTION.BATTERY_LOW"></action>
+                <action android:name="ANDROID.INTENT.ACTION.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".CarMonitorSettings"></activity>
+        <activity android:name=".MiniFileExplorer"></activity>
+    </application>
+
+</manifest>

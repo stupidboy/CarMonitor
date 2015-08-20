@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CarMonitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_start">录制</string>
+    <string name="button_stop">停止</string>
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmss"</string>
+    <string name="delete_all_fail">在录制时不能删除，请先停止</string>
+    <string name="delete_all_sucess">清除成功</string>
+    <string name="button_set">设置</string>
+    <string name="pref_open_rec_dir">打开录像文件夹</string>
+    <string name="button_save">收藏</string>
+</resources>

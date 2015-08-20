@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camerapreview"
+        android:orientation="horizontal"
+        android:background="@color/primary_dark_material_dark"
+        android:layout_gravity="center"
+        android:id="@+id/camera_control">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start"
+            android:orientation="horizontal"
+            android:id="@+id/button_start"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save"
+            android:id="@+id/button_cap"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_set"
+            android:id="@+id/button_set"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/camerapreview"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_height="fill_parent">
+</RelativeLayout>
+
+
+
+</LinearLayout>
